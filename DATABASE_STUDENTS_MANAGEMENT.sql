@@ -359,6 +359,38 @@ INSERT INTO Results (student_id, exam_id, subject_id, marks_obtained, max_marks)
 -- 4. EXAMPLE REPORT GENERATION QUERY (For your project presentation)
 -- Calculates the Semester GPA/Percentage for all 20 students.
 -- ==========================================================
+SELECT * FROM Teachers;
+
+-- 3. View the single class record
+SELECT * FROM Classes;
+
+
+-- ===============================================
+-- II. CURRICULUM DEFINITION TABLES
+-- ===============================================
+
+-- 4. View all subjects available
+SELECT * FROM Subjects;
+
+-- 5. View which subjects are assigned to the class
+SELECT * FROM ClassSubjects;
+
+
+-- ===============================================
+-- III. RECORDS AND PERFORMANCE TABLES
+-- ===============================================
+
+-- 6. View all teacher assignments (Who teaches What to Whom)
+SELECT * FROM TeacherAssignments;
+
+-- 7. View all exam definitions (e.g., Mid-Term, Final)
+SELECT * FROM Exams;
+
+-- 8. View all attendance records
+SELECT * FROM Attendance;
+
+-- 9. View all individual result entries (marks for specific student/exam/subject)
+SELECT * FROM Results;
 
 SELECT
     S.student_id,
